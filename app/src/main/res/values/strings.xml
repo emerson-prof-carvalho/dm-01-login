@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="user_login">Usuário</string>
+    <string name="user_pw">Senha</string>
+    <string name="button_login">Logar</string>
+    <string name="button_sign">Cadastrar</string>
+    <string name="button_forgot_pw">Esqueci a senha</string>
+</resources>
