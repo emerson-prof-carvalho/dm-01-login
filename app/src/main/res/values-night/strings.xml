@@ -4,4 +4,6 @@
     <string name="button_login">Logar</string>
     <string name="button_sign">Cadastrar</string>
     <string name="button_forgot_pw">Esqueci a senha</string>
+    <string name="welcome_text">Bem vindo</string>
+    <string name="take_picture_button">Tirar foto</string>
 </resources>

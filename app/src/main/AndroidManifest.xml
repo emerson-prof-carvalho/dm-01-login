@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.edu.ifsuldeminas.login">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,9 +15,9 @@
         android:theme="@style/Theme.Login">
 
         <activity
-            android:name=".BemVindoActivity"
+            android:name=".WelcomeActivity"
             android:exported="false"
-            android:label="Bem vindo">
+            android:label="@string/welcome_text">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -30,5 +34,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
