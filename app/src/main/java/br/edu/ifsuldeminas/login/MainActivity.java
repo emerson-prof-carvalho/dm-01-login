@@ -1,16 +1,11 @@
 package br.edu.ifsuldeminas.login;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,15 +21,11 @@ public class MainActivity extends AppCompatActivity {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent welcomeIntent = new Intent(getApplicationContext(),
-                        WelcomeActivity.class);
+                Toast toast = Toast.makeText(view.getContext(),
+                        R.string.button_login_click,
+                        Toast.LENGTH_LONG);
 
-                EditText userName = (EditText) findViewById(R.id.editTextUser);
-                String name = userName.getText().toString();
-
-                welcomeIntent.putExtra("USER", name);
-
-                startActivity(welcomeIntent);
+                toast.show();
             }
         });
 
@@ -42,9 +33,34 @@ public class MainActivity extends AppCompatActivity {
         buttonForgotPW.setOnClickListener(new ForgotPW());
     }
 
-    public void signIn(View view){
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+//
+//        Button buttonLogin = (Button) findViewById(R.id.buttonLogin);
+//        buttonLogin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent welcomeIntent = new Intent(getApplicationContext(),
+//                        WelcomeActivity.class);
+//
+//                EditText userName = (EditText) findViewById(R.id.editTextUser);
+//                String name = userName.getText().toString();
+//
+//                welcomeIntent.putExtra("USER", name);
+//
+//                startActivity(welcomeIntent);
+//            }
+//        });
+//
+//        Button buttonForgotPW = (Button) findViewById(R.id.buttonForgotPW);
+//        buttonForgotPW.setOnClickListener(new ForgotPW());
+//    }
+
+    public void signIn(View view) {
         Toast toast = Toast.makeText(view.getContext(),
-                "Clicou no botão Cadastrar",
+                R.string.button_sign_click,
                 Toast.LENGTH_LONG);
 
         toast.show();
